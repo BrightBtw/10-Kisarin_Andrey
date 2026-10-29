@@ -1,0 +1,32 @@
+.main {
+  display: flex;
+  max-width: 1200px;
+  align-items: center;
+  margin-top: 50px;
+  position: relative;
+}
+
+.converter {
+  width: 405px;
+
+  &__title {
+    font-size: 16px;
+    color: #777;
+    margin: 10px 0;
+}
+  }
+
+.direction {
+  width: 110px;
+  padding-top: 78px;
+  &__reverse {
+    width: 50px;
+    min-height: 50px;
+    background: url("../../assets/transfer.svg") no-repeat 50%;
+    background-size: 50px;
+    margin: 0 auto;
+    cursor: pointer;
+  }
+}
+
+
