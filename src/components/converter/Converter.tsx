@@ -1,7 +1,7 @@
 import { Currency } from "../../types/types";
 import { useSelector } from "react-redux";
 import { RootState } from "../app/store";
-import ConverterView from "../сonverterView/ConverterView";
+import ConverterView from "../converterView/ConverterView";
 import "./Converter.scss";
 
 type ConverterPropsType = {

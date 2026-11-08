@@ -14,7 +14,7 @@ const ConverterView = (props: ConverterViewType) => {
   const { count, onChangeFieldValue, changeCurrency, currentCurrency, disabled } = props;
 
   const onChangeFieldHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
-    let value = e.currentTarget.value;
+    const value = e.currentTarget.value;
     onChangeFieldValue(value);
   };
 

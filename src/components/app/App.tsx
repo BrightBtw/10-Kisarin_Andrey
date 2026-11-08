@@ -4,7 +4,7 @@ import { useGetCurrenciesQuery } from "../../services/getCurrencies.api";
 import { changeFieldValue, setCurrencies, setCurrentCurrency, setMainCurrency } from "../../services/currenciesSlice";
 import { useSelector } from "react-redux";
 import { RootState } from "./store";
-import Converter from "../сonverter/Converter";
+import Converter from "../converter/Converter";
 
 function App() {
   const dispatch = useDispatch();
