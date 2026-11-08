@@ -59,8 +59,6 @@ describe("App Component", function () {
     await waitFor(() => {
       expect(rightInput).toHaveValue(100);
     });
-
-    screen.debug();
   });
 
   it("right input cannot be edited by user", async () => {
@@ -119,10 +117,8 @@ describe("App Component", function () {
     const kztButton = await within(leftBlock).findByText("KZT");
     const jpyButton = await within(leftBlock).findByText("JPY");
 
-    // Кликаем по кнопке USD в левом блоке
     await user.click(kztButton);
 
-    // Проверяем, что активная кнопка изменилась
     expect(kztButton).toHaveClass("active");
     expect(jpyButton).not.toHaveClass("active");
   });
